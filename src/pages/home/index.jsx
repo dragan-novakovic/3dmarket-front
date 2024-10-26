@@ -1,29 +1,28 @@
 import React from 'react';
-import {withRouter} from 'react-router-dom';
 
-class HomePage extends React.Component {
+export default class HomePage extends React.Component {
     constructor(props){
         super(props);
-        this.toWeddingGifts = this.toWeddingGifts.bind(this);
-        this.toHerGifts = this.toHerGifts.bind(this);
-        this.toHousewarming = this.toHousewarming.bind(this);
-        this.toVintage = this.toVintage.bind(this);
-        this.toArts = this.toArts.bind(this);
-        this.toClothing = this.toClothing.bind(this);
+        // this.toWeddingGifts = this.toWeddingGifts.bind(this);
+        // this.toHerGifts = this.toHerGifts.bind(this);
+        // this.toHousewarming = this.toHousewarming.bind(this);
+        // this.toVintage = this.toVintage.bind(this);
+        // this.toArts = this.toArts.bind(this);
+        // this.toClothing = this.toClothing.bind(this);
     }
     componentDidMount() {
-        this
-            .props
-            .fetchCategories();
-        this
-            .props
-            .fetchProducts();
-        this
-            .props
-            .fetchShops();
-        this
-            .props
-            .fetchAllUsers();
+        // this
+        //     .props
+        //     .fetchCategories();
+        // this
+        //     .props
+        //     .fetchProducts();
+        // this
+        //     .props
+        //     .fetchShops();
+        // this
+        //     .props
+        //     .fetchAllUsers();
     }
 
     toWeddingGifts(event){
@@ -139,5 +138,3 @@ class HomePage extends React.Component {
         )
     }
 }
-
-export default withRouter(HomePage)
