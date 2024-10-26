@@ -20,13 +20,8 @@ import LoginFormContainer from './session/login_form_container';
 
 
 const App = () => (
-    <div>
-           {/* <AuthRoute path='/signup' component={SignupFormContainer} />
-            <AuthRoute path='/login' component={LoginFormContainer} /> */}
+    <div> Hello
  {/* 
-            <ProtectedRoute exact path='/shops/:shopId/edit' component={EditShopContainer} />
-            <ProtectedRoute exact path='/shops/new' component={CreateShopContainer}/>
-            <Route exact path='/shops/:shopId' component={ShopShowContainer}/>
 
             <ProtectedRoute exact path='/shops/:shopId/products/new' component={CreateProductContainer}/>
             <ProtectedRoute exact path='/products/:productId/edit' component={EditProductForm}/>

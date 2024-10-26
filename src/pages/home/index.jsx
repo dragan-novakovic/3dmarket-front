@@ -1,65 +1,6 @@
 import React from 'react';
 
 export default class HomePage extends React.Component {
-    constructor(props){
-        super(props);
-        // this.toWeddingGifts = this.toWeddingGifts.bind(this);
-        // this.toHerGifts = this.toHerGifts.bind(this);
-        // this.toHousewarming = this.toHousewarming.bind(this);
-        // this.toVintage = this.toVintage.bind(this);
-        // this.toArts = this.toArts.bind(this);
-        // this.toClothing = this.toClothing.bind(this);
-    }
-    componentDidMount() {
-        // this
-        //     .props
-        //     .fetchCategories();
-        // this
-        //     .props
-        //     .fetchProducts();
-        // this
-        //     .props
-        //     .fetchShops();
-        // this
-        //     .props
-        //     .fetchAllUsers();
-    }
-
-    toWeddingGifts(event){
-        event.preventDefault();
-        // this.props.history.push('/categories/59');
-        this.props.history.push('/categories/4');
-    }
-
-    toHerGifts(event){
-        event.preventDefault();
-        // this.props.history.push('/categories/56');
-        this.props.history.push('/categories/1');
-    }
-
-    toHousewarming(event){
-        event.preventDefault();
-        // this.props.history.push('/categories/58');
-        this.props.history.push('/categories/3');
-    }
-
-    toVintage(event){
-        event.preventDefault();
-        // this.props.history.push('/categories/63');
-        this.props.history.push('/categories/8');
-    }
-
-    toArts(event){
-        event.preventDefault();
-        // this.props.history.push('/categories/61');
-        this.props.history.push('/categories/6');
-    }
-
-    toClothing(event){
-        event.preventDefault();
-        // this.props.history.push('/categories/57');
-        this.props.history.push('/categories/2');
-    }
 
     render() {
         return (
