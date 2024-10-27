@@ -477,7 +477,6 @@ export default function ShopPage() {
                   <label
                     for="red"
                     class="border border-gray-200 rounded-sm h-6 w-6  cursor-pointer shadow-sm block"
-                    style="background-color: #fc3d57;"
                   ></label>
                 </div>
                 <div class="color-selector">
@@ -485,7 +484,6 @@ export default function ShopPage() {
                   <label
                     for="black"
                     class="border border-gray-200 rounded-sm h-6 w-6  cursor-pointer shadow-sm block"
-                    style="background-color: #000;"
                   ></label>
                 </div>
                 <div class="color-selector">
@@ -493,7 +491,6 @@ export default function ShopPage() {
                   <label
                     for="white"
                     class="border border-gray-200 rounded-sm h-6 w-6  cursor-pointer shadow-sm block"
-                    style="background-color: #fff;"
                   ></label>
                 </div>
               </div>
@@ -754,7 +751,6 @@ export default function ShopPage() {
                   <label
                     for="red"
                     class="border border-gray-200 rounded-sm h-6 w-6  cursor-pointer shadow-sm block"
-                    style="background-color: #fc3d57;"
                   ></label>
                 </div>
                 <div class="color-selector">
@@ -762,7 +758,6 @@ export default function ShopPage() {
                   <label
                     for="black"
                     class="border border-gray-200 rounded-sm h-6 w-6  cursor-pointer shadow-sm block"
-                    style="background-color: #000;"
                   ></label>
                 </div>
                 <div class="color-selector">
@@ -770,7 +765,6 @@ export default function ShopPage() {
                   <label
                     for="white"
                     class="border border-gray-200 rounded-sm h-6 w-6  cursor-pointer shadow-sm block"
-                    style="background-color: #fff;"
                   ></label>
                 </div>
               </div>
