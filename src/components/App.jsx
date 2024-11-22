@@ -5,10 +5,15 @@ import Header from "../components/header/Header";
 import CategoryList from "./categories/CategoryList";
 import LatestList from "./latest/LatestProductsList";
 import Footer from "./footer/Footer";
+import { useUserStore } from "@/providers/UserContext";
 
 const App = () => {
+  const { email, accessToken, login } = useUserStore((state) => state);
   return (
     <body>
+      <h1>{email}</h1>
+      <div onClick={() => void login()}>XXXXX</div>
+      <div onClick={login}>XXXXX</div>
       <Header />
       <NavBar />
       {/* Banner */}

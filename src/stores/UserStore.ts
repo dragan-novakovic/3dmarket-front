@@ -19,16 +19,22 @@ export type UserActions = {
 export type UserStore = UserState & UserActions;
 
 export const defaultInitState: UserState = {
-  email: "",
+  email: "ff@ff.com",
   accessToken: "",
   refreshToken: "",
 };
 
-export const createCounterStore = (initState: UserState = defaultInitState) => {
+export const createUserStore = (initState: UserState = defaultInitState) => {
   return createStore<UserStore>()((set) => ({
     ...initState,
     login: async (email, password) => {
-      // login logic
+      console.log("login");
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+      set((state) => ({
+        email: "tt@tt.com",
+        accessToken: "no",
+        refreshToken: "no",
+      }));
     },
     register: async (userDto) => {
       // register logic
