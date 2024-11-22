@@ -1,12 +1,13 @@
 import React from "react";
+import Link from "next/link";
 
 export default function Header() {
   return (
     <header class="py-4 shadow-sm bg-white">
       <div class="container flex items-center justify-between">
-        <a href="index.html">
+        <Link href="/">
           <img src="assets/images/logo.svg" alt="Logo" class="w-32" />
-        </a>
+        </Link>
 
         <div class="w-full max-w-xl relative flex">
           <span class="absolute left-4 top-3 text-lg text-gray-400">

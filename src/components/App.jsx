@@ -1,5 +1,6 @@
 import React from "react";
-import NavBar from "../components/navbar/navbar";
+import Link from "next/link";
+import NavBar from "./navbar/Navbar";
 import Header from "../components/header/Header";
 import CategoryList from "./categories/CategoryList";
 import LatestList from "./latest/LatestProductsList";
