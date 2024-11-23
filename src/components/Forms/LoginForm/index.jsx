@@ -1,6 +1,27 @@
-import React from "react";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+
+import { loginAsync } from "../../../api/loginAPI.ts";
 
 export default function LoginForm() {
+  const [formData, setFormData] = useState();
+  const navigate = useNavigate();
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const submit = (e) => {
+    e.preventDefault();
+    loginAsync(formData.email, formData.password).then((res) => {
+      if (res.success) {
+        toast.success("Login successful");
+        navigate("/");
+      }
+    });
+  };
+
   return (
     <div class="contain py-16">
       <div class="max-w-lg mx-auto shadow px-6 py-7 rounded overflow-hidden">
@@ -18,6 +39,7 @@ export default function LoginForm() {
                 id="email"
                 class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400"
                 placeholder="youremail.@domain.com"
+                onChange={handleChange}
               />
             </div>
             <div>
@@ -30,6 +52,7 @@ export default function LoginForm() {
                 id="password"
                 class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400"
                 placeholder="*******"
+                onChange={handleChange}
               />
             </div>
           </div>
@@ -53,6 +76,7 @@ export default function LoginForm() {
             <button
               type="submit"
               class="block w-full py-2 text-center text-white bg-primary border border-primary rounded hover:bg-transparent hover:text-primary transition uppercase font-roboto font-medium"
+              onClick={submit}
             >
               Login
             </button>
