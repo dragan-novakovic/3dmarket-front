@@ -6,7 +6,7 @@ import LoginForm from "../../components/Forms/LoginForm";
 import RegisterForm from "../../components/Forms/RegisterForm";
 
 export default function Login_or_Register() {
-  const [userData, setUserData] = useState(document.cookie);
+  const [userData, setUserData] = useState(null);
 
   return (
     <body>

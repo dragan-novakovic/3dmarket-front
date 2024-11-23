@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 
 export default function Navbar() {
-  const [userData, setUserData] = useState(document.cookie);
+  const [userData, setUserData] = useState(null);
   return (
     <nav class="bg-gray-800">
       <div class="container flex">

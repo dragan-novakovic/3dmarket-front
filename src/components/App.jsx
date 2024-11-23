@@ -6,7 +6,7 @@ import LatestList from "./latest/LatestProductsList";
 import Footer from "./footer/Footer";
 
 const App = () => {
-  const [userData, setUserData] = useState(document.cookie);
+  const [userData, setUserData] = useState(null);
 
   return (
     <body>

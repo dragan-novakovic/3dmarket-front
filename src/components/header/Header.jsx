@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
 export default function Header() {
-  const [userData, setUserData] = useState(document.cookie);
+  const [userData, setUserData] = useState(null);
   return (
     <header class="py-4 shadow-sm bg-white">
       <div class="container flex items-center justify-between">
