@@ -1,6 +1,13 @@
 import React from "react";
-import App from "./App.jsx";
+import Home from "./App.jsx";
+import { BrowserRouter, Route, Switch, Routes } from "react-router-dom";
 
-const Root = ({ store }) => <App />;
-
-export default Root;
+export default function Router() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" component={Home} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
