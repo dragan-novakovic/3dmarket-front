@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Link from "next/link";
 
 export default function Navbar() {
   const [userData, setUserData] = useState(null);
@@ -103,12 +102,12 @@ export default function Navbar() {
               Contact us
             </a>
           </div>
-          <Link
+          <a
             href="/login"
             className="text-gray-200 hover:text-white transition"
           >
             Login
-          </Link>
+          </a>
         </div>
       </div>
     </nav>

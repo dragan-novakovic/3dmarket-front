@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
-import NavBar from "./navbar/Navbar";
-import Header from "../components/header/Header";
-import CategoryList from "./categories/CategoryList";
-import LatestList from "./latest/LatestProductsList";
-import Footer from "./footer/Footer";
+import React, { useState } from "react";
+import NavBar from "./navbar/Navbar.jsx";
+import Header from "../components/header/Header.jsx";
+import CategoryList from "./categories/CategoryList.jsx";
+import LatestList from "./latest/LatestProductsList.jsx";
+import Footer from "./footer/Footer.jsx";
 
 const App = () => {
   const [userData, setUserData] = useState(null);
