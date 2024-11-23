@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Form from "next/form";
-import { registerAsync } from "../../../api/loginAPI";
 
 export default function RegisterForm() {
   const [formData, setFormData] = useState({});
@@ -21,7 +19,7 @@ export default function RegisterForm() {
       <div class="max-w-lg mx-auto shadow px-6 py-7 rounded overflow-hidden">
         <h2 class="text-2xl uppercase font-medium mb-1">Create an account</h2>
         <p class="text-gray-600 mb-6 text-sm">Register for new cosutumer</p>
-        <Form autoComplete="off">
+        <form autoComplete="off">
           <div class="space-y-2">
             <div>
               <label htmlFor="name" class="text-gray-600 mb-2 block">
@@ -99,7 +97,7 @@ export default function RegisterForm() {
               create account
             </button>
           </div>
-        </Form>
+        </form>
         <div class="mt-6 flex justify-center relative">
           <div class="text-gray-600 uppercase px-3 bg-white z-10 relative">
             Or signup with

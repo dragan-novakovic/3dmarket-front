@@ -3,7 +3,7 @@ import Header from "../../components/header/Header";
 import NavBar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import LoginForm from "../../components/Forms/LoginForm";
-import RegisterForm from "../../components/Forms/RegisterForm";
+import RegisterForm from "../../components/Forms/RegisterForm/index.jsx";
 
 export default function Login_or_Register() {
   const [userData, setUserData] = useState(null);

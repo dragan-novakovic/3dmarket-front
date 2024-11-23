@@ -1055,6 +1055,7 @@
       "npm:postcss-load-config@^6.0.1",
       "npm:postcss@^8.4.49",
       "npm:react-dom@^18.3.1",
+      "npm:react-router-dom@^7.0.1",
       "npm:react@^18.3.1",
       "npm:tailwindcss@^3.4.15",
       "npm:vite@^5.4.9"
