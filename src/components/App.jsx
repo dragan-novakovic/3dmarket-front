@@ -6,16 +6,12 @@ import LatestList from "./latest/LatestProductsList";
 import Footer from "./footer/Footer";
 
 const App = () => {
-  const userData = useState(null);
-
-  useEffect(() => {
-    console.log("App component mounted");
-  }, []);
+  const [userData, setUserData] = useState(document.cookie);
 
   return (
     <body>
       <Header />
-      <NavBar />
+      <NavBar userData={userData} />
       {/* Banner */}
       {/* Banner Boxes */}
       <CategoryList />

@@ -1,4 +1,10 @@
+import React, { useState, useEffect } from "react";
+import { registerAsync } from "../../../api/loginAPI";
+
 export default function RegisterForm() {
+  const [userData, setUserData] = useState(document.cookie);
+
+  useEffect(() => {}, []);
   return (
     <div class="contain py-16">
       <div class="max-w-lg mx-auto shadow px-6 py-7 rounded overflow-hidden">
