@@ -105,7 +105,11 @@ export default function LoginForm() {
 
         <p class="mt-4 text-center text-gray-600">
           Don't have account?
-          <a href="register.html" class="text-primary">
+          <a
+            href="#"
+            class="text-primary"
+            onClick={() => navigate("/register")}
+          >
             Register now
           </a>
         </p>
