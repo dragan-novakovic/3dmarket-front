@@ -8,4 +8,6 @@ export class HttpUtils {
   public static getBearerToken(): string {
     return `Bearer ${localStorage.getItem("accessToken")}`;
   }
+
+  public static checkServiceStatus() {}
 }

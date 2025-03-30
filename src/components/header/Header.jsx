@@ -6,7 +6,7 @@ export default function Header() {
     <header class="py-4 shadow-sm bg-white">
       <div class="container flex items-center justify-between">
         <a href="/">
-          <img src="assets/images/logo.svg" alt="Logo" class="w-32" />
+          <img src="assets/images/logo-text.png" alt="Logo" class="w-32" />
         </a>
 
         <div class="w-full max-w-xl relative flex">
@@ -20,7 +20,10 @@ export default function Header() {
             class="w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none hidden md:flex"
             placeholder="search"
           />
-          <button class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition hidden md:flex">
+          <button
+            type="button"
+            class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition hidden md:flex"
+          >
             Search
           </button>
         </div>
